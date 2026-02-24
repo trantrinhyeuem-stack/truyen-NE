@@ -2,13 +2,75 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang sự kiện</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- QUAN TRỌNG: giúp hiển thị đúng trên điện thoại -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVEN – CƠN MƯA XANH Phần 1</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        .container{
+            max-width: 700px;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .story{
+            font-size: 16px;
+            white-space: pre-line;
+        }
+
+        .btn{
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 15px auto;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: #1d4ed8;
+        }
+
+        .back{
+            background-color: #475569;
+        }
+
+        .back:hover{
+            background-color: #334155;
+        }
+    </style>
+
 </head>
 <body>
 
-    <h1>EVEN – CƠN MƯA XANH Phần 1</h1>
-    <p>Tập 1 - Khởi đầu của sự bất thường
+<div class="container">
+
+<h1>EVEN – CƠN MƯA XANH Phần 1</h1>
+
+<div class="story">
+Tập 1 - Khởi đầu của sự bất thường
+
 Tên tôi là Even.
 Doton Even.
 Tôi là học sinh lớp 12, một năm cuối cùng trước khi bước vào thế giới người lớn — hoặc ít nhất, đó là điều tôi từng nghĩ.
@@ -93,12 +155,19 @@ Máu bắn ra.
 Tiếng hét vang lên khắp lớp.
 Và đó là khoảnh khắc…
 Thế giới của chúng tôi kết thúc.
-[HẾT TẬP 1]</p>
-    <a href="event2.html">
-        <button> Chapter 2 →</button>
-    </a>
 
-    <a href="index.html">Quay lại trang chính</a>
+[HẾT TẬP 1]
+</div>
+
+<button class="btn" onclick="location.href='event2.html'">
+Chapter 2 →
+</button>
+
+<button class="btn back" onclick="location.href='index.html'">
+Quay lại trang chính
+</button>
+
+</div>
 
 </body>
 </html>
