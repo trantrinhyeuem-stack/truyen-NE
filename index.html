@@ -2,15 +2,103 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>chính truyện NE</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Quan trọng cho điện thoại -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chính truyện NE</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background-color:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        /* Khung chính */
+        .container{
+            text-align:center;
+            padding:25px;
+            width:90%;
+            max-width:400px;
+            border-radius:15px;
+
+            /* viền cầu vồng */
+            border:3px solid transparent;
+            background:
+                linear-gradient(#0f172a, #0f172a) padding-box,
+                linear-gradient(270deg,
+                    red,
+                    orange,
+                    yellow,
+                    lime,
+                    cyan,
+                    blue,
+                    violet,
+                    red) border-box;
+
+            animation: rainbow 5s linear infinite;
+        }
+
+        /* animation cầu vồng */
+        @keyframes rainbow{
+            0%{
+                background-position:0% 50%;
+            }
+            100%{
+                background-position:200% 50%;
+            }
+        }
+
+        h1{
+            font-size:22px;
+            margin-bottom:10px;
+        }
+
+        p{
+            font-size:16px;
+            margin-bottom:20px;
+        }
+
+        /* nút truyện */
+        .btn{
+            display:block;
+            text-decoration:none;
+            background:#2563eb;
+            padding:12px;
+            border-radius:10px;
+            color:white;
+            font-size:16px;
+            margin-top:10px;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+        }
+
+    </style>
+
 </head>
 <body>
 
-    <h1>Chào mừng đến website của tôi</h1>
-    <p>Đây là trang truyện chính </p>
+<div class="container">
 
-    <a href="event.html">EVEN – CƠN MƯA XANH </a>
+    <h1>Chào mừng đến website của tôi</h1>
+
+    <p>Đây là trang truyện chính</p>
+
+    <a href="event.html" class="btn">
+        EVEN – CƠN MƯA XANH
+    </a>
+
+</div>
 
 </body>
 </html>
